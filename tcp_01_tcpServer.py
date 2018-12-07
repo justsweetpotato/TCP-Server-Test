@@ -46,7 +46,7 @@ import os
 # tcpSerSock.close()
 
 
-def socketSever(host="127.0.0.1", port=7890):
+def socketSever(host="", port=7890):
     tcpSerSock = socket(AF_INET, SOCK_STREAM)
     tcpSerSock.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)  # 端口复用
     tcpSerSock.bind((host, port))
